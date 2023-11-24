@@ -17,7 +17,7 @@
 
 <body>
 
-  <form action="">
+  <form action="includes/formhandler.inc.php" method="post">
     <div class="container col-lg-4 d-flex justify-content-center align-items-center min-vh-100">
       <div class="col shadow p-4 rounded-3 border-top border-5 border-primary">
         <div class="row align-items-center">
@@ -26,15 +26,15 @@
           </div>
 
           <div class="input-group mb-3">
-            <input type="email" class="form-control form-control-lg bg-light fs-6" placeholder="Email Address" />
+            <input type="email" class="form-control form-control-lg bg-light fs-6" placeholder="Email Address" name="email"/>
           </div>
 
           <div class="input-group mb-3">
-            <input type="text" class="form-control form-control-lg bg-light fs-6" placeholder="Username" />
+            <input type="text" class="form-control form-control-lg bg-light fs-6" placeholder="Username" name="username"/>
           </div>
 
           <div class="input-group mb-3">
-            <input type="password" class="form-control form-control-lg bg-light fs-6" placeholder="Password" id="pwd" />
+            <input type="password" class="form-control form-control-lg bg-light fs-6" placeholder="Password" id="pwd" name="pwd"/>
           </div>
 
           <div class="input-group mb-3">
