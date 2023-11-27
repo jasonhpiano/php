@@ -17,12 +17,13 @@
 
 <body>
 
-  <form action="includes/formhandler.inc.php" method="post">
-    <div class="container col-lg-4 d-flex justify-content-center align-items-center min-vh-100">
+  <form action="includes/userupdate.inc.php" method="post">
+    <div class="container col-lg-4 d-flex justify-content-center align-items-center mt-5">
       <div class="col shadow p-4 rounded-3 border-top border-5 border-primary">
         <div class="row align-items-center">
+          
           <div class="header-text mb-3 text-center">
-            <h1>Sign Up</h1>
+            <h1>Change Account</h1>
           </div>
 
           <div class="input-group mb-3">
@@ -37,22 +38,41 @@
             <input type="password" class="form-control form-control-lg bg-light fs-6" placeholder="Password" id="pwd" name="pwd"/>
           </div>
 
+          <div class="input-group mb-3 d-flex justify-content-between">
+            <div class="input-group">
+              <button class="btn btn-lg btn-primary w-100 fs-6 mb-2">
+                Update
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+
+  <form action="includes/userdelete.inc.php" method="post">
+    <div class="container col-lg-4 d-flex justify-content-center align-items-center mt-5">
+      <div class="col shadow p-4 rounded-3 border-top border-5 border-primary">
+        <div class="row align-items-center">
+          
+          <div class="header-text mb-3 text-center">
+            <h1>Delete Account</h1>
+          </div>
+
           <div class="input-group mb-3">
-            <input type="checkbox" id="chk" class="me-2" />
-            <small>Show Password</small>
+            <input type="text" class="form-control form-control-lg bg-light fs-6" placeholder="Username" name="username"/>
+          </div>
+
+          <div class="input-group mb-3">
+            <input type="password" class="form-control form-control-lg bg-light fs-6" placeholder="Password" id="pwd" name="pwd"/>
           </div>
 
           <div class="input-group mb-3 d-flex justify-content-between">
             <div class="input-group">
               <button class="btn btn-lg btn-primary w-100 fs-6 mb-2">
-                Sign Up
+                Delete
               </button>
             </div>
-
-            <div class="input-group">
-              <small class="text-secondary">Don't have an account yet?<a href="#" class="ms-2">Log in</a></small>
-            </div>
-
           </div>
         </div>
       </div>
